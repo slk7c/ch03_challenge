@@ -16,5 +16,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: $ARTIFACT_NAME
-          path: path/to/artifact/world.txt
+          name: $ {{ env.ARTIFACT_NAME }}
+          path: .
